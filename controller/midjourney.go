@@ -9,13 +9,13 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/QuantumNous/new-api/common"
-	"github.com/QuantumNous/new-api/dto"
-	"github.com/QuantumNous/new-api/logger"
-	"github.com/QuantumNous/new-api/model"
-	"github.com/QuantumNous/new-api/service"
-	"github.com/QuantumNous/new-api/setting"
-	"github.com/QuantumNous/new-api/setting/system_setting"
+	"github.com/Flare-sh/api/common"
+	"github.com/Flare-sh/api/dto"
+	"github.com/Flare-sh/api/logger"
+	"github.com/Flare-sh/api/model"
+	"github.com/Flare-sh/api/service"
+	"github.com/Flare-sh/api/setting"
+	"github.com/Flare-sh/api/setting/system_setting"
 
 	"github.com/gin-gonic/gin"
 )

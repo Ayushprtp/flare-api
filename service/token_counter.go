@@ -9,12 +9,12 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/QuantumNous/new-api/common"
-	"github.com/QuantumNous/new-api/constant"
-	"github.com/QuantumNous/new-api/dto"
-	relaycommon "github.com/QuantumNous/new-api/relay/common"
-	constant2 "github.com/QuantumNous/new-api/relay/constant"
-	"github.com/QuantumNous/new-api/types"
+	"github.com/Flare-sh/api/common"
+	"github.com/Flare-sh/api/constant"
+	"github.com/Flare-sh/api/dto"
+	relaycommon "github.com/Flare-sh/api/relay/common"
+	constant2 "github.com/Flare-sh/api/relay/constant"
+	"github.com/Flare-sh/api/types"
 
 	"github.com/gin-gonic/gin"
 )

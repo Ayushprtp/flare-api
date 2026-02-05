@@ -5,12 +5,12 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/QuantumNous/new-api/common"
-	"github.com/QuantumNous/new-api/constant"
-	"github.com/QuantumNous/new-api/dto"
-	"github.com/QuantumNous/new-api/model"
-	"github.com/QuantumNous/new-api/setting/operation_setting"
-	"github.com/QuantumNous/new-api/types"
+	"github.com/Flare-sh/api/common"
+	"github.com/Flare-sh/api/constant"
+	"github.com/Flare-sh/api/dto"
+	"github.com/Flare-sh/api/model"
+	"github.com/Flare-sh/api/setting/operation_setting"
+	"github.com/Flare-sh/api/types"
 )
 
 func formatNotifyType(channelId int, status int) string {
@@ -44,7 +44,7 @@ func EnableChannel(channelId int, usingKey string, channelName string) {
 	}
 }
 
-func ShouldDisableChannel(channelType int, err *types.NewAPIError) bool {
+func ShouldDisableChannel(channelType int, err *types.FlareError) bool {
 	if !common.AutomaticDisableChannelEnabled {
 		return false
 	}
@@ -101,7 +101,7 @@ func ShouldDisableChannel(channelType int, err *types.NewAPIError) bool {
 	return search
 }
 
-func ShouldEnableChannel(newAPIError *types.NewAPIError, status int) bool {
+func ShouldEnableChannel(newAPIError *types.FlareError, status int) bool {
 	if !common.AutomaticEnableChannelEnabled {
 		return false
 	}

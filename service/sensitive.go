@@ -4,8 +4,8 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/QuantumNous/new-api/dto"
-	"github.com/QuantumNous/new-api/setting"
+	"github.com/Flare-sh/api/dto"
+	"github.com/Flare-sh/api/setting"
 )
 
 func CheckSensitiveMessages(messages []dto.Message) ([]string, error) {

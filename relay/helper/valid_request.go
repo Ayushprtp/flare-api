@@ -7,11 +7,11 @@ import (
 	"math"
 	"strings"
 
-	"github.com/QuantumNous/new-api/common"
-	"github.com/QuantumNous/new-api/dto"
-	"github.com/QuantumNous/new-api/logger"
-	relayconstant "github.com/QuantumNous/new-api/relay/constant"
-	"github.com/QuantumNous/new-api/types"
+	"github.com/Flare-sh/api/common"
+	"github.com/Flare-sh/api/dto"
+	"github.com/Flare-sh/api/logger"
+	relayconstant "github.com/Flare-sh/api/relay/constant"
+	"github.com/Flare-sh/api/types"
 
 	"github.com/gin-gonic/gin"
 )

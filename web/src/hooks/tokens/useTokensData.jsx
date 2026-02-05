@@ -1,5 +1,5 @@
 /*
-Copyright (C) 2025 QuantumNous
+Copyright (C) 2025 Flare-sh
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
@@ -137,7 +137,7 @@ export const useTokensData = (openFluentNotification) => {
     }
     if (url.includes('{cherryConfig}') === true) {
       let cherryConfig = {
-        id: 'new-api',
+        id: 'flare',
         baseUrl: serverAddress,
         apiKey: 'sk-' + record.key,
       };

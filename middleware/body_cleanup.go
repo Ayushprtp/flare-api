@@ -1,8 +1,8 @@
 package middleware
 
 import (
-	"github.com/QuantumNous/new-api/common"
-	"github.com/QuantumNous/new-api/service"
+	"github.com/Flare-sh/api/common"
+	"github.com/Flare-sh/api/service"
 	"github.com/gin-gonic/gin"
 )
 

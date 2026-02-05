@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/QuantumNous/new-api/types"
+	"github.com/Flare-sh/api/types"
 )
 
 const (

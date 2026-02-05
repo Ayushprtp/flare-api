@@ -1,5 +1,5 @@
 /*
-Copyright (C) 2025 QuantumNous
+Copyright (C) 2025 Flare-sh
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
@@ -744,13 +744,13 @@ const SystemSetting = () => {
                   <Text>
                     {t('仅支持')}{' '}
                     <a
-                      href='https://github.com/Calcium-Ion/new-api-worker'
+                      href='https://github.com/Flare-sh/flare-worker'
                       target='_blank'
                       rel='noreferrer'
                     >
-                      new-api-worker
+                      flare-worker
                     </a>{' '}
-                    {t('或其兼容new-api-worker格式的其他版本')}
+                    {t('或其兼容flare-worker格式的其他版本')}
                   </Text>
                   <Row
                     gutter={{ xs: 8, sm: 16, md: 24, lg: 24, xl: 24, xxl: 24 }}

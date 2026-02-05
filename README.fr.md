@@ -1,8 +1,8 @@
 <div align="center">
 
-![new-api](/web/public/logo.png)
+![flare](/web/public/logo.png)
 
-# New API
+# Flare
 
 🍥 **Passerelle de modèles étendus de nouvelle génération et système de gestion d'actifs d'IA**
 
@@ -14,33 +14,33 @@
 </p>
 
 <p align="center">
-  <a href="https://raw.githubusercontent.com/Calcium-Ion/new-api/main/LICENSE">
-    <img src="https://img.shields.io/github/license/Calcium-Ion/new-api?color=brightgreen" alt="licence">
+  <a href="https://raw.githubusercontent.com/Flare-sh/api/main/LICENSE">
+    <img src="https://img.shields.io/github/license/Flare-sh/api?color=brightgreen" alt="licence">
   </a>
-  <a href="https://github.com/Calcium-Ion/new-api/releases/latest">
-    <img src="https://img.shields.io/github/v/release/Calcium-Ion/new-api?color=brightgreen&include_prereleases" alt="version">
+  <a href="https://github.com/Flare-sh/api/releases/latest">
+    <img src="https://img.shields.io/github/v/release/Flare-sh/api?color=brightgreen&include_prereleases" alt="version">
   </a>
-  <a href="https://github.com/users/Calcium-Ion/packages/container/package/new-api">
+  <a href="https://github.com/users/Calcium-Ion/packages/container/package/flare">
     <img src="https://img.shields.io/badge/docker-ghcr.io-blue" alt="docker">
   </a>
-  <a href="https://hub.docker.com/r/CalciumIon/new-api">
+  <a href="https://hub.docker.com/r/CalciumIon/flare">
     <img src="https://img.shields.io/badge/docker-dockerHub-blue" alt="docker">
   </a>
-  <a href="https://goreportcard.com/report/github.com/Calcium-Ion/new-api">
-    <img src="https://goreportcard.com/badge/github.com/Calcium-Ion/new-api" alt="GoReportCard">
+  <a href="https://goreportcard.com/report/github.com/Flare-sh/api">
+    <img src="https://goreportcard.com/badge/github.com/Flare-sh/api" alt="GoReportCard">
   </a>
 </p>
 
 <p align="center">
   <a href="https://trendshift.io/repositories/8227" target="_blank">
-    <img src="https://trendshift.io/api/badge/repositories/8227" alt="Calcium-Ion%2Fnew-api | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/>
+    <img src="https://trendshift.io/api/badge/repositories/8227" alt="Calcium-Ion%2Fflare | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/>
   </a>
   <br>
-  <a href="https://hellogithub.com/repository/QuantumNous/new-api" target="_blank">
+  <a href="https://hellogithub.com/repository/Flare-sh/flare" target="_blank">
     <img src="https://api.hellogithub.com/v1/widgets/recommend.svg?rid=539ac4217e69431684ad4a0bab768811&claim_uid=tbFPfKIDHpc4TzR" alt="Featured｜HelloGitHub" style="width: 250px; height: 54px;" width="250" height="54" />
   </a>
-  <a href="https://www.producthunt.com/products/new-api/launches/new-api?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-new-api" target="_blank" rel="noopener noreferrer">
-    <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1047693&theme=light&t=1769577875005" alt="New API - All-in-one AI asset management gateway. | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" />
+  <a href="https://www.producthunt.com/products/flare/launches/flare?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-flare" target="_blank" rel="noopener noreferrer">
+    <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1047693&theme=light&t=1769577875005" alt="Flare - All-in-one AI asset management gateway. | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" />
   </a>
 </p>
 
@@ -57,7 +57,7 @@
 ## 📝 Description du projet
 
 > [!NOTE]  
-> Il s'agit d'un projet open-source développé sur la base de [One API](https://github.com/songquanpeng/one-api)
+> Il s'agit d'un projet open-source développé sur la base de [Flare](https://github.com/songquanpeng/flare)
 
 > [!IMPORTANT]  
 > - Ce projet est uniquement destiné à des fins d'apprentissage personnel, sans garantie de stabilité ni de support technique.
@@ -95,13 +95,13 @@
 ## 🙏 Remerciements spéciaux
 
 <p align="center">
-  <a href="https://www.jetbrains.com/?from=new-api" target="_blank">
+  <a href="https://www.jetbrains.com/?from=flare" target="_blank">
     <img src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png" alt="JetBrains Logo" width="120" />
   </a>
 </p>
 
 <p align="center">
-  <strong>Merci à <a href="https://www.jetbrains.com/?from=new-api">JetBrains</a> pour avoir fourni une licence de développement open-source gratuite pour ce projet</strong>
+  <strong>Merci à <a href="https://www.jetbrains.com/?from=flare">JetBrains</a> pour avoir fourni une licence de développement open-source gratuite pour ce projet</strong>
 </p>
 
 ---
@@ -112,8 +112,8 @@
 
 ```bash
 # Cloner le projet
-git clone https://github.com/QuantumNous/new-api.git
-cd new-api
+git clone https://github.com/Flare-sh/api.git
+cd flare
 
 # Modifier la configuration docker-compose.yml
 nano docker-compose.yml
@@ -127,22 +127,22 @@ docker-compose up -d
 
 ```bash
 # Tirer la dernière image
-docker pull calciumion/new-api:latest
+docker pull calciumion/flare:latest
 
 # Utilisation de SQLite (par défaut)
-docker run --name new-api -d --restart always \
+docker run --name flare -d --restart always \
   -p 3000:3000 \
-  -e TZ=Asia/Shanghai \
+  -e TZ=Asia/Kolkata \
   -v ./data:/data \
-  calciumion/new-api:latest
+  calciumion/flare:latest
 
 # Utilisation de MySQL
-docker run --name new-api -d --restart always \
+docker run --name flare -d --restart always \
   -p 3000:3000 \
   -e SQL_DSN="root:123456@tcp(localhost:3306)/oneapi" \
-  -e TZ=Asia/Shanghai \
+  -e TZ=Asia/Kolkata \
   -v ./data:/data \
-  calciumion/new-api:latest
+  calciumion/flare:latest
 ```
 
 > **💡 Astuce:** `-v ./data:/data` sauvegardera les données dans le dossier `data` du répertoire actuel, vous pouvez également le changer en chemin absolu comme `-v /your/custom/path:/data`
@@ -151,9 +151,9 @@ docker run --name new-api -d --restart always \
 
 ---
 
-🎉 Après le déploiement, visitez `http://localhost:3000` pour commencer à utiliser!
+🎉 Après le déploiement, visitez `https://api.flare-sh.tech` pour commencer à utiliser!
 
-📖 Pour plus de méthodes de déploiement, veuillez vous référer à [Guide de déploiement](https://docs.newapi.pro/en/docs/installation)
+📖 Pour plus de méthodes de déploiement, veuillez vous référer à [Guide de déploiement](https://github.com/Flare-sh/api/en/docs/installation)
 
 ---
 
@@ -161,7 +161,7 @@ docker run --name new-api -d --restart always \
 
 <div align="center">
 
-### 📖 [Documentation officielle](https://docs.newapi.pro/en/docs) | [![Demander à DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/QuantumNous/new-api)
+### 📖 [Documentation officielle](https://github.com/Flare-sh/api/en/docs) | [![Demander à DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Flare-sh/flare)
 
 </div>
 
@@ -169,17 +169,17 @@ docker run --name new-api -d --restart always \
 
 | Catégorie | Lien |
 |------|------|
-| 🚀 Guide de déploiement | [Documentation d'installation](https://docs.newapi.pro/en/docs/installation) |
-| ⚙️ Configuration de l'environnement | [Variables d'environnement](https://docs.newapi.pro/en/docs/installation/config-maintenance/environment-variables) |
-| 📡 Documentation de l'API | [Documentation de l'API](https://docs.newapi.pro/en/docs/api) |
-| ❓ FAQ | [FAQ](https://docs.newapi.pro/en/docs/support/faq) |
-| 💬 Interaction avec la communauté | [Canaux de communication](https://docs.newapi.pro/en/docs/support/community-interaction) |
+| 🚀 Guide de déploiement | [Documentation d'installation](https://github.com/Flare-sh/api/en/docs/installation) |
+| ⚙️ Configuration de l'environnement | [Variables d'environnement](https://github.com/Flare-sh/api/en/docs/installation/config-maintenance/environment-variables) |
+| 📡 Documentation de l'API | [Documentation de l'API](https://github.com/Flare-sh/api/en/docs/api) |
+| ❓ FAQ | [FAQ](https://github.com/Flare-sh/api/en/docs/support/faq) |
+| 💬 Interaction avec la communauté | [Canaux de communication](https://github.com/Flare-sh/api/en/docs/support/community-interaction) |
 
 ---
 
 ## ✨ Fonctionnalités clés
 
-> Pour les fonctionnalités détaillées, veuillez vous référer à [Présentation des fonctionnalités](https://docs.newapi.pro/en/docs/guide/wiki/basic-concepts/features-introduction) |
+> Pour les fonctionnalités détaillées, veuillez vous référer à [Présentation des fonctionnalités](https://github.com/Flare-sh/api/en/docs/guide/wiki/basic-concepts/features-introduction) |
 
 ### 🎨 Fonctions principales
 
@@ -187,7 +187,7 @@ docker run --name new-api -d --restart always \
 |------|------|
 | 🎨 Nouvelle interface utilisateur | Conception d'interface utilisateur moderne |
 | 🌍 Multilingue | Prend en charge le chinois, l'anglais, le français, le japonais |
-| 🔄 Compatibilité des données | Complètement compatible avec la base de données originale de One API |
+| 🔄 Compatibilité des données | Complètement compatible avec la base de données originale de Flare |
 | 📈 Tableau de bord des données | Console visuelle et analyse statistique |
 | 🔒 Gestion des permissions | Regroupement de jetons, restrictions de modèles, gestion des utilisateurs |
 
@@ -204,16 +204,16 @@ docker run --name new-api -d --restart always \
 - 🤖 Connexion par autorisation LinuxDO
 - 📱 Connexion par autorisation Telegram
 - 🔑 Authentification unifiée OIDC
-- 🔍 Requête de quota d'utilisation de clé (avec [neko-api-key-tool](https://github.com/Calcium-Ion/neko-api-key-tool))
+- 🔍 Requête de quota d'utilisation de clé (avec [neko-api-key-tool](https://github.com/Flare-sh/neko-api-key-tool))
 
 ### 🚀 Fonctionnalités avancées
 
 **Prise en charge des formats d'API:**
-- ⚡ [OpenAI Responses](https://docs.newapi.pro/en/docs/api/ai-model/chat/openai/create-response)
-- ⚡ [OpenAI Realtime API](https://docs.newapi.pro/en/docs/api/ai-model/realtime/create-realtime-session) (y compris Azure)
-- ⚡ [Claude Messages](https://docs.newapi.pro/en/docs/api/ai-model/chat/create-message)
-- ⚡ [Google Gemini](https://doc.newapi.pro/en/api/google-gemini-chat)
-- 🔄 [Modèles Rerank](https://docs.newapi.pro/en/docs/api/ai-model/rerank/create-rerank) (Cohere, Jina)
+- ⚡ [OpenAI Responses](https://github.com/Flare-sh/api/en/docs/api/ai-model/chat/openai/create-response)
+- ⚡ [OpenAI Realtime API](https://github.com/Flare-sh/api/en/docs/api/ai-model/realtime/create-realtime-session) (y compris Azure)
+- ⚡ [Claude Messages](https://github.com/Flare-sh/api/en/docs/api/ai-model/chat/create-message)
+- ⚡ [Google Gemini](https://github.com/Flare-sh/api/en/api/google-gemini-chat)
+- 🔄 [Modèles Rerank](https://github.com/Flare-sh/api/en/docs/api/ai-model/rerank/create-rerank) (Cohere, Jina)
 
 **Routage intelligent:**
 - ⚖️ Sélection aléatoire pondérée des canaux
@@ -256,17 +256,17 @@ docker run --name new-api -d --restart always \
 
 ## 🤖 Prise en charge des modèles
 
-> Pour les détails, veuillez vous référer à [Documentation de l'API - Interface de relais](https://docs.newapi.pro/en/docs/api)
+> Pour les détails, veuillez vous référer à [Documentation de l'API - Interface de relais](https://github.com/Flare-sh/api/en/docs/api)
 
 | Type de modèle | Description | Documentation |
 |---------|------|------|
-| 🤖 OpenAI-Compatible | Modèles compatibles OpenAI | [Documentation](https://docs.newapi.pro/en/docs/api/ai-model/chat/openai/createchatcompletion) |
-| 🤖 OpenAI Responses | Format OpenAI Responses | [Documentation](https://docs.newapi.pro/en/docs/api/ai-model/chat/openai/createresponse) |
-| 🎨 Midjourney-Proxy | [Midjourney-Proxy(Plus)](https://github.com/novicezk/midjourney-proxy) | [Documentation](https://doc.newapi.pro/api/midjourney-proxy-image) |
-| 🎵 Suno-API | [Suno API](https://github.com/Suno-API/Suno-API) | [Documentation](https://doc.newapi.pro/api/suno-music) |
-| 🔄 Rerank | Cohere, Jina | [Documentation](https://docs.newapi.pro/en/docs/api/ai-model/rerank/creatererank) |
-| 💬 Claude | Format Messages | [Documentation](https://docs.newapi.pro/en/docs/api/ai-model/chat/createmessage) |
-| 🌐 Gemini | Format Google Gemini | [Documentation](https://docs.newapi.pro/en/docs/api/ai-model/chat/gemini/geminirelayv1beta) |
+| 🤖 OpenAI-Compatible | Modèles compatibles OpenAI | [Documentation](https://github.com/Flare-sh/api/en/docs/api/ai-model/chat/openai/createchatcompletion) |
+| 🤖 OpenAI Responses | Format OpenAI Responses | [Documentation](https://github.com/Flare-sh/api/en/docs/api/ai-model/chat/openai/createresponse) |
+| 🎨 Midjourney-Proxy | [Midjourney-Proxy(Plus)](https://github.com/novicezk/midjourney-proxy) | [Documentation](https://github.com/Flare-sh/api/api/midjourney-proxy-image) |
+| 🎵 Suno-API | [Suno API](https://github.com/Suno-API/Suno-API) | [Documentation](https://github.com/Flare-sh/api/api/suno-music) |
+| 🔄 Rerank | Cohere, Jina | [Documentation](https://github.com/Flare-sh/api/en/docs/api/ai-model/rerank/creatererank) |
+| 💬 Claude | Format Messages | [Documentation](https://github.com/Flare-sh/api/en/docs/api/ai-model/chat/createmessage) |
+| 🌐 Gemini | Format Google Gemini | [Documentation](https://github.com/Flare-sh/api/en/docs/api/ai-model/chat/gemini/geminirelayv1beta) |
 | 🔧 Dify | Mode ChatFlow | - |
 | 🎯 Personnalisé | Prise en charge de l'adresse d'appel complète | - |
 
@@ -275,16 +275,16 @@ docker run --name new-api -d --restart always \
 <details>
 <summary>Voir la liste complète des interfaces</summary>
 
-- [Interface de discussion (Chat Completions)](https://docs.newapi.pro/en/docs/api/ai-model/chat/openai/createchatcompletion)
-- [Interface de réponse (Responses)](https://docs.newapi.pro/en/docs/api/ai-model/chat/openai/createresponse)
-- [Interface d'image (Image)](https://docs.newapi.pro/en/docs/api/ai-model/images/openai/post-v1-images-generations)
-- [Interface audio (Audio)](https://docs.newapi.pro/en/docs/api/ai-model/audio/openai/create-transcription)
-- [Interface vidéo (Video)](https://docs.newapi.pro/en/docs/api/ai-model/audio/openai/createspeech)
-- [Interface d'incorporation (Embeddings)](https://docs.newapi.pro/en/docs/api/ai-model/embeddings/createembedding)
-- [Interface de rerank (Rerank)](https://docs.newapi.pro/en/docs/api/ai-model/rerank/creatererank)
-- [Conversation en temps réel (Realtime)](https://docs.newapi.pro/en/docs/api/ai-model/realtime/createrealtimesession)
-- [Discussion Claude](https://docs.newapi.pro/en/docs/api/ai-model/chat/createmessage)
-- [Discussion Google Gemini](https://docs.newapi.pro/en/docs/api/ai-model/chat/gemini/geminirelayv1beta)
+- [Interface de discussion (Chat Completions)](https://github.com/Flare-sh/api/en/docs/api/ai-model/chat/openai/createchatcompletion)
+- [Interface de réponse (Responses)](https://github.com/Flare-sh/api/en/docs/api/ai-model/chat/openai/createresponse)
+- [Interface d'image (Image)](https://github.com/Flare-sh/api/en/docs/api/ai-model/images/openai/post-v1-images-generations)
+- [Interface audio (Audio)](https://github.com/Flare-sh/api/en/docs/api/ai-model/audio/openai/create-transcription)
+- [Interface vidéo (Video)](https://github.com/Flare-sh/api/en/docs/api/ai-model/audio/openai/createspeech)
+- [Interface d'incorporation (Embeddings)](https://github.com/Flare-sh/api/en/docs/api/ai-model/embeddings/createembedding)
+- [Interface de rerank (Rerank)](https://github.com/Flare-sh/api/en/docs/api/ai-model/rerank/creatererank)
+- [Conversation en temps réel (Realtime)](https://github.com/Flare-sh/api/en/docs/api/ai-model/realtime/createrealtimesession)
+- [Discussion Claude](https://github.com/Flare-sh/api/en/docs/api/ai-model/chat/createmessage)
+- [Discussion Google Gemini](https://github.com/Flare-sh/api/en/docs/api/ai-model/chat/gemini/geminirelayv1beta)
 
 </details>
 
@@ -293,7 +293,7 @@ docker run --name new-api -d --restart always \
 ## 🚢 Déploiement
 
 > [!TIP]
-> **Dernière image Docker:** `calciumion/new-api:latest`
+> **Dernière image Docker:** `calciumion/flare:latest`
 
 ### 📋 Exigences de déploiement
 
@@ -320,14 +320,14 @@ docker run --name new-api -d --restart always \
 | `AZURE_DEFAULT_API_VERSION` | Version de l'API Azure | `2025-04-01-preview` |
 | `ERROR_LOG_ENABLED` | Interrupteur du journal d'erreurs | `false` |
 | `PYROSCOPE_URL` | Adresse du serveur Pyroscope | - |
-| `PYROSCOPE_APP_NAME` | Nom de l'application Pyroscope | `new-api` |
+| `PYROSCOPE_APP_NAME` | Nom de l'application Pyroscope | `flare` |
 | `PYROSCOPE_BASIC_AUTH_USER` | Utilisateur Basic Auth Pyroscope | - |
 | `PYROSCOPE_BASIC_AUTH_PASSWORD` | Mot de passe Basic Auth Pyroscope | - |
 | `PYROSCOPE_MUTEX_RATE` | Taux d'échantillonnage mutex Pyroscope | `5` |
 | `PYROSCOPE_BLOCK_RATE` | Taux d'échantillonnage block Pyroscope | `5` |
-| `HOSTNAME` | Nom d'hôte tagué pour Pyroscope | `new-api` |
+| `HOSTNAME` | Nom d'hôte tagué pour Pyroscope | `flare` |
 
-📖 **Configuration complète:** [Documentation des variables d'environnement](https://docs.newapi.pro/en/docs/installation/config-maintenance/environment-variables)
+📖 **Configuration complète:** [Documentation des variables d'environnement](https://github.com/Flare-sh/api/en/docs/installation/config-maintenance/environment-variables)
 
 </details>
 
@@ -338,8 +338,8 @@ docker run --name new-api -d --restart always \
 
 ```bash
 # Cloner le projet
-git clone https://github.com/QuantumNous/new-api.git
-cd new-api
+git clone https://github.com/Flare-sh/api.git
+cd flare
 
 # Modifier la configuration
 nano docker-compose.yml
@@ -355,21 +355,21 @@ docker-compose up -d
 
 **Utilisation de SQLite:**
 ```bash
-docker run --name new-api -d --restart always \
+docker run --name flare -d --restart always \
   -p 3000:3000 \
-  -e TZ=Asia/Shanghai \
+  -e TZ=Asia/Kolkata \
   -v ./data:/data \
-  calciumion/new-api:latest
+  calciumion/flare:latest
 ```
 
 **Utilisation de MySQL:**
 ```bash
-docker run --name new-api -d --restart always \
+docker run --name flare -d --restart always \
   -p 3000:3000 \
   -e SQL_DSN="root:123456@tcp(localhost:3306)/oneapi" \
-  -e TZ=Asia/Shanghai \
+  -e TZ=Asia/Kolkata \
   -v ./data:/data \
-  calciumion/new-api:latest
+  calciumion/flare:latest
 ```
 
 > **💡 Explication du chemin:** 
@@ -411,15 +411,15 @@ docker run --name new-api -d --restart always \
 
 | Projet | Description |
 |------|------|
-| [One API](https://github.com/songquanpeng/one-api) | Base du projet original |
+| [Flare](https://github.com/songquanpeng/flare) | Base du projet original |
 | [Midjourney-Proxy](https://github.com/novicezk/midjourney-proxy) | Prise en charge de l'interface Midjourney |
 
 ### Outils d'accompagnement
 
 | Projet | Description |
 |------|------|
-| [neko-api-key-tool](https://github.com/Calcium-Ion/neko-api-key-tool) | Outil de recherche de quota d'utilisation avec une clé |
-| [new-api-horizon](https://github.com/Calcium-Ion/new-api-horizon) | Version optimisée haute performance de New API |
+| [neko-api-key-tool](https://github.com/Flare-sh/neko-api-key-tool) | Outil de recherche de quota d'utilisation avec une clé |
+| [flare-horizon](https://github.com/Flare-sh/api-horizon) | Version optimisée haute performance de Flare |
 
 ---
 
@@ -429,10 +429,10 @@ docker run --name new-api -d --restart always \
 
 | Ressource | Lien |
 |------|------|
-| 📘 FAQ | [FAQ](https://docs.newapi.pro/en/docs/support/faq) |
-| 💬 Interaction avec la communauté | [Canaux de communication](https://docs.newapi.pro/en/docs/support/community-interaction) |
-| 🐛 Commentaires sur les problèmes | [Commentaires sur les problèmes](https://docs.newapi.pro/en/docs/support/feedback-issues) |
-| 📚 Documentation complète | [Documentation officielle](https://docs.newapi.pro/en/docs) |
+| 📘 FAQ | [FAQ](https://github.com/Flare-sh/api/en/docs/support/faq) |
+| 💬 Interaction avec la communauté | [Canaux de communication](https://github.com/Flare-sh/api/en/docs/support/community-interaction) |
+| 🐛 Commentaires sur les problèmes | [Commentaires sur les problèmes](https://github.com/Flare-sh/api/en/docs/support/feedback-issues) |
+| 📚 Documentation complète | [Documentation officielle](https://github.com/Flare-sh/api/en/docs) |
 
 ### 🤝 Guide de contribution
 
@@ -457,7 +457,7 @@ Si les politiques de votre organisation ne permettent pas l'utilisation de logic
 
 <div align="center">
 
-[![Graphique de l'historique des étoiles](https://api.star-history.com/svg?repos=Calcium-Ion/new-api&type=Date)](https://star-history.com/#Calcium-Ion/new-api&Date)
+[![Graphique de l'historique des étoiles](https://api.star-history.com/svg?repos=Flare-sh/api&type=Date)](https://star-history.com/#Flare-sh/api&Date)
 
 </div>
 
@@ -465,12 +465,12 @@ Si les politiques de votre organisation ne permettent pas l'utilisation de logic
 
 <div align="center">
 
-### 💖 Merci d'utiliser New API
+### 💖 Merci d'utiliser Flare
 
 Si ce projet vous est utile, bienvenue à nous donner une ⭐️ Étoile！
 
-**[Documentation officielle](https://docs.newapi.pro/en/docs)** • **[Commentaires sur les problèmes](https://github.com/Calcium-Ion/new-api/issues)** • **[Dernière version](https://github.com/Calcium-Ion/new-api/releases)**
+**[Documentation officielle](https://github.com/Flare-sh/api/en/docs)** • **[Commentaires sur les problèmes](https://github.com/Flare-sh/api/issues)** • **[Dernière version](https://github.com/Flare-sh/api/releases)**
 
-<sub>Construit avec ❤️ par QuantumNous</sub>
+<sub>Construit avec ❤️ par Flare-sh</sub>
 
 </div>

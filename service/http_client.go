@@ -9,8 +9,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/QuantumNous/new-api/common"
-	"github.com/QuantumNous/new-api/setting/system_setting"
+	"github.com/Flare-sh/api/common"
+	"github.com/Flare-sh/api/setting/system_setting"
 
 	"golang.org/x/net/proxy"
 )

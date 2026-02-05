@@ -12,23 +12,23 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/QuantumNous/new-api/common"
-	"github.com/QuantumNous/new-api/constant"
-	"github.com/QuantumNous/new-api/dto"
-	"github.com/QuantumNous/new-api/logger"
-	"github.com/QuantumNous/new-api/relay/channel"
-	"github.com/QuantumNous/new-api/relay/channel/ai360"
-	"github.com/QuantumNous/new-api/relay/channel/lingyiwanwu"
+	"github.com/Flare-sh/api/common"
+	"github.com/Flare-sh/api/constant"
+	"github.com/Flare-sh/api/dto"
+	"github.com/Flare-sh/api/logger"
+	"github.com/Flare-sh/api/relay/channel"
+	"github.com/Flare-sh/api/relay/channel/ai360"
+	"github.com/Flare-sh/api/relay/channel/lingyiwanwu"
 
-	//"github.com/QuantumNous/new-api/relay/channel/minimax"
-	"github.com/QuantumNous/new-api/relay/channel/openrouter"
-	"github.com/QuantumNous/new-api/relay/channel/xinference"
-	relaycommon "github.com/QuantumNous/new-api/relay/common"
-	"github.com/QuantumNous/new-api/relay/common_handler"
-	relayconstant "github.com/QuantumNous/new-api/relay/constant"
-	"github.com/QuantumNous/new-api/service"
-	"github.com/QuantumNous/new-api/setting/model_setting"
-	"github.com/QuantumNous/new-api/types"
+	//"github.com/Flare-sh/api/relay/channel/minimax"
+	"github.com/Flare-sh/api/relay/channel/openrouter"
+	"github.com/Flare-sh/api/relay/channel/xinference"
+	relaycommon "github.com/Flare-sh/api/relay/common"
+	"github.com/Flare-sh/api/relay/common_handler"
+	relayconstant "github.com/Flare-sh/api/relay/constant"
+	"github.com/Flare-sh/api/service"
+	"github.com/Flare-sh/api/setting/model_setting"
+	"github.com/Flare-sh/api/types"
 
 	"github.com/gin-gonic/gin"
 )
@@ -222,7 +222,7 @@ func (a *Adaptor) SetupRequestHeader(c *gin.Context, header *http.Header, info *
 		}
 	}
 	if info.ChannelType == constant.ChannelTypeOpenRouter {
-		header.Set("HTTP-Referer", "https://www.newapi.ai")
+		header.Set("HTTP-Referer", "https://www.flare.ai")
 		header.Set("X-Title", "New API")
 	}
 	return nil
@@ -603,7 +603,7 @@ func (a *Adaptor) DoRequest(c *gin.Context, info *relaycommon.RelayInfo, request
 	}
 }
 
-func (a *Adaptor) DoResponse(c *gin.Context, resp *http.Response, info *relaycommon.RelayInfo) (usage any, err *types.NewAPIError) {
+func (a *Adaptor) DoResponse(c *gin.Context, resp *http.Response, info *relaycommon.RelayInfo) (usage any, err *types.FlareError) {
 	switch info.RelayMode {
 	case relayconstant.RelayModeRealtime:
 		err, usage = OpenaiRealtimeHandler(c, info)

@@ -15,19 +15,19 @@ import (
 	"sync"
 	"time"
 
-	"github.com/QuantumNous/new-api/common"
-	"github.com/QuantumNous/new-api/constant"
-	"github.com/QuantumNous/new-api/dto"
-	"github.com/QuantumNous/new-api/middleware"
-	"github.com/QuantumNous/new-api/model"
-	"github.com/QuantumNous/new-api/relay"
-	relaycommon "github.com/QuantumNous/new-api/relay/common"
-	relayconstant "github.com/QuantumNous/new-api/relay/constant"
-	"github.com/QuantumNous/new-api/relay/helper"
-	"github.com/QuantumNous/new-api/service"
-	"github.com/QuantumNous/new-api/setting/operation_setting"
-	"github.com/QuantumNous/new-api/setting/ratio_setting"
-	"github.com/QuantumNous/new-api/types"
+	"github.com/Flare-sh/api/common"
+	"github.com/Flare-sh/api/constant"
+	"github.com/Flare-sh/api/dto"
+	"github.com/Flare-sh/api/middleware"
+	"github.com/Flare-sh/api/model"
+	"github.com/Flare-sh/api/relay"
+	relaycommon "github.com/Flare-sh/api/relay/common"
+	relayconstant "github.com/Flare-sh/api/relay/constant"
+	"github.com/Flare-sh/api/relay/helper"
+	"github.com/Flare-sh/api/service"
+	"github.com/Flare-sh/api/setting/operation_setting"
+	"github.com/Flare-sh/api/setting/ratio_setting"
+	"github.com/Flare-sh/api/types"
 
 	"github.com/bytedance/gopkg/util/gopool"
 	"github.com/samber/lo"
@@ -38,7 +38,7 @@ import (
 type testResult struct {
 	context     *gin.Context
 	localErr    error
-	newAPIError *types.NewAPIError
+	newAPIError *types.FlareError
 }
 
 func testChannel(channel *model.Channel, testModel string, endpointType string) testResult {

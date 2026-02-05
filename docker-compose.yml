@@ -1,4 +1,4 @@
-# New-API Docker Compose Configuration
+# Flare Docker Compose Configuration
 # 
 # Quick Start:
 #   1. docker-compose up -d
@@ -15,9 +15,9 @@
 version: '3.4' # For compatibility with older Docker versions
 
 services:
-  new-api:
-    image: calciumion/new-api:latest
-    container_name: new-api
+  flare:
+    image: calciumion/flare:latest
+    container_name: flare
     restart: always
     command: --log-dir /app/logs
     ports:
@@ -26,10 +26,10 @@ services:
       - ./data:/data
       - ./logs:/app/logs
     environment:
-      - SQL_DSN=postgresql://root:123456@postgres:5432/new-api # ⚠️ IMPORTANT: Change the password in production!
-#      - SQL_DSN=root:123456@tcp(mysql:3306)/new-api  # Point to the mysql service, uncomment if using MySQL
+      - SQL_DSN=postgresql://root:123456@postgres:5432/flare # ⚠️ IMPORTANT: Change the password in production!
+#      - SQL_DSN=root:123456@tcp(mysql:3306)/flare  # Point to the mysql service, uncomment if using MySQL
       - REDIS_CONN_STRING=redis://redis
-      - TZ=Asia/Shanghai
+      - TZ=Asia/Kolkata
       - ERROR_LOG_ENABLED=true # 是否启用错误日志记录 (Whether to enable error log recording)
       - BATCH_UPDATE_ENABLED=true  # 是否启用批量更新 (Whether to enable batch update)
 #      - STREAMING_TIMEOUT=300  # 流模式无响应超时时间，单位秒，默认120秒，如果出现空补全可以尝试改为更大值 （Streaming timeout in seconds, default is 120s. Increase if experiencing empty completions）
@@ -61,7 +61,7 @@ services:
     environment:
       POSTGRES_USER: root
       POSTGRES_PASSWORD: 123456  # ⚠️ IMPORTANT: Change this password in production!
-      POSTGRES_DB: new-api
+      POSTGRES_DB: flare
     volumes:
       - pg_data:/var/lib/postgresql/data
 #    ports:
@@ -73,7 +73,7 @@ services:
 #    restart: always
 #    environment:
 #      MYSQL_ROOT_PASSWORD: 123456  # ⚠️ IMPORTANT: Change this password in production!
-#      MYSQL_DATABASE: new-api
+#      MYSQL_DATABASE: flare
 #    volumes:
 #      - mysql_data:/var/lib/mysql
 #    ports:

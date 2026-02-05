@@ -1,11 +1,11 @@
 package router
 
 import (
-	"github.com/QuantumNous/new-api/constant"
-	"github.com/QuantumNous/new-api/controller"
-	"github.com/QuantumNous/new-api/middleware"
-	"github.com/QuantumNous/new-api/relay"
-	"github.com/QuantumNous/new-api/types"
+	"github.com/Flare-sh/api/constant"
+	"github.com/Flare-sh/api/controller"
+	"github.com/Flare-sh/api/middleware"
+	"github.com/Flare-sh/api/relay"
+	"github.com/Flare-sh/api/types"
 
 	"github.com/gin-gonic/gin"
 )

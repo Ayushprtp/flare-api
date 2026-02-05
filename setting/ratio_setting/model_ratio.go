@@ -5,8 +5,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/QuantumNous/new-api/common"
-	"github.com/QuantumNous/new-api/setting/operation_setting"
+	"github.com/Flare-sh/api/common"
+	"github.com/Flare-sh/api/setting/operation_setting"
 )
 
 // from songquanpeng/one-api

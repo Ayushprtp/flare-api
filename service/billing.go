@@ -5,11 +5,11 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/QuantumNous/new-api/common"
-	"github.com/QuantumNous/new-api/logger"
-	"github.com/QuantumNous/new-api/model"
-	relaycommon "github.com/QuantumNous/new-api/relay/common"
-	"github.com/QuantumNous/new-api/types"
+	"github.com/Flare-sh/api/common"
+	"github.com/Flare-sh/api/logger"
+	"github.com/Flare-sh/api/model"
+	relaycommon "github.com/Flare-sh/api/relay/common"
+	"github.com/Flare-sh/api/types"
 	"github.com/gin-gonic/gin"
 )
 
@@ -20,13 +20,13 @@ const (
 
 // PreConsumeBilling decides whether to pre-consume from subscription or wallet based on user preference.
 // It also always pre-consumes token quota in quota units (same as legacy flow).
-func PreConsumeBilling(c *gin.Context, preConsumedQuota int, relayInfo *relaycommon.RelayInfo) *types.NewAPIError {
+func PreConsumeBilling(c *gin.Context, preConsumedQuota int, relayInfo *relaycommon.RelayInfo) *types.FlareError {
 	if relayInfo == nil {
 		return types.NewError(fmt.Errorf("relayInfo is nil"), types.ErrorCodeInvalidRequest, types.ErrOptionWithSkipRetry())
 	}
 
 	pref := common.NormalizeBillingPreference(relayInfo.UserSetting.BillingPreference)
-	trySubscription := func() *types.NewAPIError {
+	trySubscription := func() *types.FlareError {
 		quotaType := 0
 		// For total quota: consume preConsumedQuota quota units.
 		subConsume := int64(preConsumedQuota)
@@ -70,7 +70,7 @@ func PreConsumeBilling(c *gin.Context, preConsumedQuota int, relayInfo *relaycom
 		return nil
 	}
 
-	tryWallet := func() *types.NewAPIError {
+	tryWallet := func() *types.FlareError {
 		relayInfo.BillingSource = BillingSourceWallet
 		relayInfo.SubscriptionId = 0
 		relayInfo.SubscriptionPreConsumed = 0

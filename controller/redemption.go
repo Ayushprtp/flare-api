@@ -5,9 +5,9 @@ import (
 	"strconv"
 	"unicode/utf8"
 
-	"github.com/QuantumNous/new-api/common"
-	"github.com/QuantumNous/new-api/i18n"
-	"github.com/QuantumNous/new-api/model"
+	"github.com/Flare-sh/api/common"
+	"github.com/Flare-sh/api/i18n"
+	"github.com/Flare-sh/api/model"
 
 	"github.com/gin-gonic/gin"
 )

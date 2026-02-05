@@ -8,10 +8,10 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/QuantumNous/new-api/constant"
-	"github.com/QuantumNous/new-api/logger"
-	"github.com/QuantumNous/new-api/model"
-	"github.com/QuantumNous/new-api/service"
+	"github.com/Flare-sh/api/constant"
+	"github.com/Flare-sh/api/logger"
+	"github.com/Flare-sh/api/model"
+	"github.com/Flare-sh/api/service"
 
 	"github.com/gin-gonic/gin"
 )

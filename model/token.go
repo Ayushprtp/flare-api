@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/QuantumNous/new-api/common"
+	"github.com/Flare-sh/api/common"
 	"github.com/bytedance/gopkg/util/gopool"
 	"gorm.io/gorm"
 )

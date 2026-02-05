@@ -1,9 +1,9 @@
 package controller
 
 import (
-	"github.com/QuantumNous/new-api/model"
-	"github.com/QuantumNous/new-api/service"
-	"github.com/QuantumNous/new-api/setting/ratio_setting"
+	"github.com/Flare-sh/api/model"
+	"github.com/Flare-sh/api/service"
+	"github.com/Flare-sh/api/setting/ratio_setting"
 
 	"github.com/gin-gonic/gin"
 )

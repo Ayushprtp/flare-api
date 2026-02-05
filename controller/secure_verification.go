@@ -5,10 +5,10 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/QuantumNous/new-api/common"
-	"github.com/QuantumNous/new-api/model"
-	passkeysvc "github.com/QuantumNous/new-api/service/passkey"
-	"github.com/QuantumNous/new-api/setting/system_setting"
+	"github.com/Flare-sh/api/common"
+	"github.com/Flare-sh/api/model"
+	passkeysvc "github.com/Flare-sh/api/service/passkey"
+	"github.com/Flare-sh/api/setting/system_setting"
 
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"

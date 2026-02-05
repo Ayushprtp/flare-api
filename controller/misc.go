@@ -6,14 +6,14 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/QuantumNous/new-api/common"
-	"github.com/QuantumNous/new-api/constant"
-	"github.com/QuantumNous/new-api/middleware"
-	"github.com/QuantumNous/new-api/model"
-	"github.com/QuantumNous/new-api/setting"
-	"github.com/QuantumNous/new-api/setting/console_setting"
-	"github.com/QuantumNous/new-api/setting/operation_setting"
-	"github.com/QuantumNous/new-api/setting/system_setting"
+	"github.com/Flare-sh/api/common"
+	"github.com/Flare-sh/api/constant"
+	"github.com/Flare-sh/api/middleware"
+	"github.com/Flare-sh/api/model"
+	"github.com/Flare-sh/api/setting"
+	"github.com/Flare-sh/api/setting/console_setting"
+	"github.com/Flare-sh/api/setting/operation_setting"
+	"github.com/Flare-sh/api/setting/system_setting"
 
 	"github.com/gin-gonic/gin"
 )
