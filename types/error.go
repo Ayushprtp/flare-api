@@ -26,7 +26,7 @@ type ClaudeError struct {
 type ErrorType string
 
 const (
-	ErrorTypeFlareError     ErrorType = "new_api_error"
+	ErrorTypeFlareError     ErrorType = "flare_error"
 	ErrorTypeOpenAIError     ErrorType = "openai_error"
 	ErrorTypeClaudeError     ErrorType = "claude_error"
 	ErrorTypeMidjourneyError ErrorType = "midjourney_error"

@@ -139,7 +139,7 @@ docker run --name flare -d --restart always \
 # 使用 MySQL
 docker run --name flare -d --restart always \
   -p 3000:3000 \
-  -e SQL_DSN="root:123456@tcp(localhost:3306)/oneapi" \
+  -e SQL_DSN="root:123456@tcp(localhost:3306)/flare" \
   -e TZ=Asia/Kolkata \
   -v ./data:/data \
   calciumion/flare:latest
@@ -366,7 +366,7 @@ docker run --name flare -d --restart always \
 ```bash
 docker run --name flare -d --restart always \
   -p 3000:3000 \
-  -e SQL_DSN="root:123456@tcp(localhost:3306)/oneapi" \
+  -e SQL_DSN="root:123456@tcp(localhost:3306)/flare" \
   -e TZ=Asia/Kolkata \
   -v ./data:/data \
   calciumion/flare:latest

@@ -35,7 +35,7 @@ var (
 func Init() error {
 	var initErr error
 	initOnce.Do(func() {
-		bundle = i18n.NewBundle(language.Chinese)
+		bundle = i18n.NewBundle(language.English)
 		bundle.RegisterUnmarshalFunc("yaml", yaml.Unmarshal)
 
 		// Load embedded translation files

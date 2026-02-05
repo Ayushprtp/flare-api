@@ -1,18 +1,29 @@
 # File path: /etc/systemd/system/flare.service
+# Installation commands:
+# sudo cp flare.service /etc/systemd/system/
 # sudo systemctl daemon-reload
 # sudo systemctl start flare
 # sudo systemctl enable flare
 # sudo systemctl status flare
+#
+# Management commands:
+# sudo systemctl stop flare
+# sudo systemctl restart flare
+# sudo journalctl -u flare -f  # View logs
+
 [Unit]
-Description=Flare Service
+Description=Flare - Unified API Gateway for AI Models
 After=network.target
 
 [Service]
-User=ubuntu  # 注意修改用户名
-WorkingDirectory=/path/to/flare  # 注意修改路径
-ExecStart=/path/to/flare/flare --port 3000 --log-dir /path/to/flare/logs  # 注意修改路径和端口号
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/new-api
+ExecStart=/home/ubuntu/new-api/flare --port 3000 --log-dir /home/ubuntu/new-api/logs
 Restart=always
 RestartSec=5
+StandardOutput=journal
+StandardError=journal
 
 [Install]
 WantedBy=multi-user.target
